@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script async src="./index.js"></script>
+    <title>API MercadoLibre</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedorHeader">
+            <form class="searchForm">
+                <input class="searchInput" name="buscar" type="text" placeholder="Lavarropas..">
+                <button class="searchButton">Buscar</button>
+            </form>
+        </div>
+    </header>
+    <div class="content">
+        <h3 class="result">Resultados: <span class="resultCount"></span></h3>
+        
+        <div class="result"></div>
+    </div>
+    <template id="result-item-template">
+        <div class="result-item">
+            <img  class="result-item-img" src="" alt="">
+            <div class="result-item-content">
+                <h4 class="result-item-tittle">titulo</h4>
+                <p class="result-item-condition">titulo</p>
+                <p class="result-item-sell-count">
+                    vendidos: <span class="result-item-sell-count-numer"></span>
+                </p>
+            </div>
+            <div class="result-item-price">1111</div>
+        </div>
+    </template>
+</body>
+</html>
